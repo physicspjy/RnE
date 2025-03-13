@@ -104,7 +104,7 @@ p.29
 #include <Servo.h>  //서보모터 라이브러리 사용
 
 Servo servo;   //서보모터 객체를 servo로 생성
-int potPin = 0;  //
+int potPin = A0;  //
 int val;
 
 void setup() {
