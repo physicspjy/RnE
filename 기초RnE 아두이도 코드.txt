@@ -89,8 +89,8 @@ void setup() {
   Serial.println("Serial Com start");  //시리얼 통신 시작 문자 출력
 }
 void loop() {
-  int val = analogRead(A0);   //아날로그 A0에서 값을 읽어서 val에 저장, 0~1023 사이의 숫자
-  int resistor = map(val,0,1023,0,max_R);  //map함수 이용해서 아날로그값을 0 ~ max_R 사이의 저항값으로 변환
+  int val=analogRead(A0);   //아날로그 A0에서 값을 읽어서 val에 저장, 0~1023 사이의 숫자
+  int resistor=map(val,0,1023,0,max_R);  //map함수 이용해서 아날로그값을 0 ~ max_R 사이의 저항값으로 변환
   Serial.print("Resistor value:");
   Serial.print(resistor);  //저항값 출력
   Serial.println("ohm");
