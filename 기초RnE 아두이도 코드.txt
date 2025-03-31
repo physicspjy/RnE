@@ -33,7 +33,7 @@ void loop() {
 
 p.20
 -----------------------------------------------------------
-int sw =8;  //스위치 디지털 핀 8에 연결
+int sw=8;  //스위치 디지털 핀 8에 연결
 int led=7;  //LED 디지털 핀 7에 연결
 void setup()
 {
@@ -104,7 +104,7 @@ p.29
 #include <Servo.h>  //서보모터 라이브러리 사용
 
 Servo servo;   //서보모터 객체를 servo로 생성
-int potPin = A0;  //
+int potPin=A0;  //
 int val;
 
 void setup() {
@@ -112,8 +112,8 @@ void setup() {
 }
 
 void loop() {
-  val = analogRead(potPin);  //potPin값을 val에 저장
-  val = map(val,0,1023,0,179);   //map함수 이용해서 아날로그값 0 ~ 1023을 0 ~ 179으로 조정한 후 val에 저장
+  val=analogRead(potPin);  //potPin값을 val에 저장
+  val=map(val,0,1023,0,179);   //map함수 이용해서 아날로그값 0 ~ 1023을 0 ~ 179으로 조정한 후 val에 저장
   servo.write(val);  //val값에 따라 서보모터 이동
   delay(50);
 }
